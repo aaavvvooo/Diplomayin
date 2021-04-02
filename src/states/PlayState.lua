@@ -1,21 +1,3 @@
---[[
-    GD50
-    Match-3 Remake
-
-    -- PlayState Class --
-
-    Author: Colton Ogden
-    cogden@cs50.harvard.edu
-
-    State in which we can actually play, moving around a grid cursor that
-    can swap two tiles; when two tiles make a legal swap (a swap that results
-    in a valid match), perform the swap and destroy all matched tiles, adding
-    their values to the player's point score. The player can continue playing
-    until they exceed the number of points needed to get to the next level
-    or until the time runs out, at which point they are brought back to the
-    main menu or the score entry menu if they made the top 10.
-]]
-
 PlayState = Class{__includes = BaseState}
 
 function PlayState:init()

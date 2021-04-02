@@ -1,15 +1,3 @@
---[[
-    GD50
-    Match-3 Remake
-
-    -- Board Class --
-
-    Author: Colton Ogden
-    cogden@cs50.harvard.edu
-
-    The Board is our arrangement of Tiles with which we must try to find matching
-    sets of three horizontally or vertically.
-]]
 
 Board = Class{}
 
@@ -18,7 +6,6 @@ function Board:init(x, y)
     self.y = y
     self.matches = {}
 
-    --self:initializeTiles()
 end
 
 function Board:initializeTiles(level)
@@ -329,11 +316,6 @@ function Board:SwapTiles(t1, t2)
     self.tiles[t1.gridY][t1.gridX] = t1
 
     self.tiles[t2.gridY][t2.gridX] = t2
-
-    --[[Timer.tween(0.1, {
-        [t1] = {x = t2.x, y = t2.y},
-        [t2] = {x = t1.x, y = t1.y}
-    })]]
 end
 
 function Board:MatchesExist()

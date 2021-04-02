@@ -1,15 +1,3 @@
---[[
-    GD50
-    Match-3 Remake
-
-    Author: Colton Ogden
-    cogden@cs50.harvard.edu
-
-    - GameOverState Class-
-
-    State that simply shows us our score when we finally lose.
-]]
-
 GameOverState = Class{__includes = BaseState}
 
 function GameOverState:init()
